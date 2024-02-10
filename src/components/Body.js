@@ -41,11 +41,7 @@ const Body =()=>{
            
         </div>
     </section>  
-    <section  id="trex">  
-        <div className="trex-body">
-            
-        </div>
-    </section>
+  
     <section id="inscription">
         <div className="inscription-body-1">
         
