@@ -1,7 +1,7 @@
 import React,{useEffect} from "react"
 import  ReactDOM  from "react-dom/client"
 import Navbar from "./components/Navbar"
-import Trex from "./components/trex";
+
 
 import {
     BrowserRouter as Router,
