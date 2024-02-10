@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Heaven'; /* Set a unique name for your font */
+    src: url('./upheavtt.ttf') format('truetype');
+    /* Add more src lines if you have different font formats (e.g., woff, woff2) */
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Pixelify Sans'; /* Set a unique name for your font */
+    src: url('./PixelifySans.ttf') format('truetype');
+    /* Add more src lines if you have different font formats (e.g., woff, woff2) */
+    font-weight: normal;
+    font-style: normal;
+  }

@@ -1,0 +1,547 @@
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+ 
+}
+body {
+  margin: 0;
+ padding: 0;
+ scroll-padding-top: env(safe-area-inset-top);
+}
+
+
+.navbar {
+  background: linear-gradient(180deg, #1A1C20 -13.85%, rgba(207, 117, 0, 0.92) 88.03%, rgba(240, 165, 0, 0.94) 119.07%);
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 9.8vh;
+  color: #fff;
+}
+
+.logo-container {
+  background: lightgray 50% / cover no-repeat;
+  padding: 0px;
+  margin: 0px;
+}
+
+.logo {
+  padding: 0;
+  margin: 0;
+  padding-top: 1vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  width: 3.5vw;
+  aspect-ratio: 1;
+}
+
+.nav-items>ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: linear-gradient(180deg, #1A1C20 -13.85%, rgba(207, 117, 0, 0.92) 88.03%, rgba(240, 165, 0, 0.94) 119.07%);
+}
+
+.nav-items>ul>li {
+  float: left;
+}
+
+.nav-items>ul>li>a {
+  height: 7.4vh;
+ 
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Pixelify Sans';
+  font-size: 1.8vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 2.4vh;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  text-align: center;
+  position: relative;
+}
+
+.nav-end>ul {
+  list-style: none;
+  display: flex;
+  margin: 0; 
+  padding: 0; 
+  margin-left: 2vw;
+}
+
+
+.nav-end>ul>li {
+  height:6.1vh;
+  width:2.5vw;
+  background: #AFAFAD;
+  box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.62) inset;
+  padding-left: 1vw;
+  margin-right: 0.88vw;
+  text-decoration: none;
+  font-family: 'Pixelify Sans';
+  color: #282828;
+  font-size: 2.5vw;
+  font-style: normal;
+  font-weight: 400; 
+  margin-top: 2vh; 
+  
+}
+
+.dropdown>li {
+  
+    list-style-type: none;
+  background: #AFAFAD;
+  box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.62) inset;
+  text-align: center;
+  height: 7.4vh;
+  width: 11.4vw;
+  padding-top: 1.5vh;
+  position: absolute;
+  z-index: 1;
+  left:1.2vw;
+}
+
+.dropdown>li>a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+.active{
+  background: #AFAFAD;
+  box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.62) inset;
+}
+#landing{
+  height: 100vh;
+  background: linear-gradient(0deg, #1A1C20 19.99%, rgba(207, 117, 0, 0.92) 72.1%, rgba(240, 165, 0, 0.94) 96%);
+  width: 100vw;
+  padding-top: 9.8vh;
+}
+.home {
+  background-image: url('./assets/trex20a.gif');
+  background-size: 100% 100%;
+  height:90.2vh;
+  width:80vw;
+  background-repeat: no-repeat;
+  margin-left: 10vw;
+
+}
+
+#trex{
+  background: linear-gradient(180deg, #1D1A20 56.5%, #D28014 83.5%, rgba(240, 165, 0, 0.94) 98%);
+}
+
+.trex-body {
+  background-image: url('./assets/tr.png');
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 108vh;
+  background-repeat: no-repeat;
+}
+#inscription{
+  background: linear-gradient(0deg, #1A1C20 19.99%, rgba(207, 117, 0, 0.92) 72.1%, rgba(240, 165, 0, 0.94) 96%);
+}
+.inscription-body-1 {
+  background-image: url('./assets/in.png');
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 110vh;
+  background-repeat: no-repeat;
+}
+
+
+#lotto{ 
+    background: linear-gradient(180deg, #1A1C20 21.71%, rgba(207, 117, 0, 0.92) 85.73%);
+}
+.lotto-body{
+    background-image: url('./assets/lotto.png');
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 105vh;
+    background-repeat: no-repeat;
+}
+  
+  
+#roadmap{
+    background: linear-gradient(0deg, #1A1C20 0%, rgba(207, 117, 0, 0.92) 100%);
+}
+.roadmap-body{
+  background-image: url('./assets/roadmapnew.png');
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 105vh;
+  background-repeat: no-repeat;
+}
+
+#contact{
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(144.72% 144.72% at 50% -25.65%, #1A1C20 54.07%, rgba(207, 117, 0, 0.92) 89.27%, rgba(240, 165, 0, 0.94) 100%);
+  position: relative;
+}
+.contact-body{
+display: flex;
+
+}
+.inbox{
+  width: 20.5vw;
+  height: auto;
+  left: 27vw;
+  
+  position: absolute;
+  top: 37vh;
+}
+.contact{
+  background: linear-gradient(183deg, #FF7A00 15.38%, rgba(255, 212, 61, 0.90) 97.8%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+font-size: 3.66vw;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+left: 57vw;
+position: absolute;
+top: 30vh;
+}
+.subscribe{
+  color: #FFF;
+
+font-size: 1.8vw;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+left: 59vw;
+position: absolute;
+top: 39vh;
+}
+.twitter{
+  width:5.12vw;
+  height:5.09vw;
+  left: 58vw;
+  position: absolute;
+  top: 57vh;
+}
+.telegram{
+  width:4.8vw;
+  height:4.6vw;
+  left: 66vw;
+  position: absolute;
+  top: 58vh;
+}
+.collect{
+  left: 57vw;
+position: absolute;
+top: 48vh;
+
+}
+
+input[type=email] {
+  width: 12.44vw;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  color: white;
+  border-bottom: 2px solid #fff;
+ 
+}
+input[type=submit] {
+  width: 6.44vw;
+font-size: 1.5vw;
+ 
+}
+.navbar-mob{
+ display: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+@media only screen and (max-width: 768px) {
+
+.navbar-mob {
+  background: linear-gradient(
+    180deg,
+    #1a1c20 -13.85%,
+    rgba(207, 117, 0, 0.92) 88.03%,
+    rgba(240, 165, 0, 0.94) 119.07%
+  );
+  
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  height: 7vh;
+  color: #fff;
+  transition: transform 0.3s ease;
+  display: flex;
+
+  justify-content: space-between;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* semi-transparent black */
+  z-index: 999; /* ensure it's behind the navbar */
+  cursor: pointer; /* show pointer cursor when hovering */
+}
+.navbar-mob.open {
+  transform: translateX(0);
+}
+.navbar-mob.open >.nav-item-mob {
+  right: 0;
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 20px;
+  cursor: none;
+  padding: 5px;
+  z-index: 1001;
+  margin-top: 1.2vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+.hamburger-container{
+  background: lightgray 50% / cover no-repeat;
+  padding: 0px;
+  margin: 0px;
+  z-index: 1001;
+}
+.navbar-mob.open>.hamburger-container{
+  background:none;
+  
+}
+.navbar-mob.open>.hamburger-container>.hamburger{
+  background: #F0A500;
+  margin-top: 2vh;
+  padding:1.5vh 1vh;
+  
+  border-radius: 10px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+.nav-item-mob {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: -60vw;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #1a1c20 -13.85%,
+    rgba(207, 117, 0, 0.92) 88.03%,
+    rgba(240, 165, 0, 0.94) 119.07%
+  );
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: left 0.3s ease;
+  background-image: url('./assets/navmobile.png');
+  background-size: 100% 100%;
+ 
+}
+
+.nav-item-mob li {
+  margin: 5px 0;
+  color: white;
+  font-size: 15px;
+  cursor: none;
+ position: relative;
+ top: 10vh;
+ width: 35vw;
+ height: 7vh;
+ background-image: url('./assets/frame.png');
+ background-size: 100% 100%;
+background-position: left;
+ background-repeat: no-repeat;
+padding-left: 5vw;
+padding-top: 2vh;
+
+}
+
+.nav-item-mob>li> a {
+ 
+  list-style: none;
+  text-decoration: none;
+  color: white;
+cursor: none;
+ 
+}
+
+
+.logo {
+  padding-top: 1vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  width: 10.5vw;
+  aspect-ratio: 1;
+}
+
+.navbar{
+  display: none;
+}
+#landing{
+  padding-top: 6.5vh;
+}
+  .home {
+    background-image: url('./assets/trex20mob.gif');
+    background-size: 100% 100%;
+    height:93vh;
+    width:100vw;
+    background-repeat: no-repeat;
+    margin-left: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
+  }
+  
+  .trex-body{
+    background-image:url('./assets/trexmob.png');
+    width: 100vw;
+    height: 100vh;
+  }
+  .inscription-body-1 {
+    background-image: url('./assets/inscriptionmob1.png');
+    width: 100vw;
+    height: 100vh;
+  }
+  .inscription-body-2 {
+    background-image: url('./assets/inscriptionmob2.png');
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+  }
+  .lotto-body{
+    background-image: url('./assets/lottomob.png');
+    width: 100vw;
+    height: 100vh;
+    
+  }
+  .roadmap-body{
+    background-image: url('./assets/roadmapmob.png');
+    width: 100vw;
+    height: 100vh;
+  }
+  
+
+  .inbox{
+    width: 50vw;
+    height: auto;
+    left: 25vw;
+    position: absolute;
+    top: 35vh;
+  }
+  .contact{ 
+  font-size: 15vw;
+  left: 20vw;
+  position: absolute;
+  top: 25vh;
+  }
+  .subscribe{
+  font-size: 7vw;
+  left: 30vw;
+  position: absolute;
+  top: 55vh;
+  }
+  .twitter{
+    width:15vw;
+    height:15vw;
+    left: 25vw;
+    position: absolute;
+    top: 70vh;
+  }
+  .telegram{
+    width:15vw;
+    height:15vw;
+    left: 60vw;
+    position: absolute;
+    top: 70vh;
+  }
+  .collect{
+    left: 25vw;
+  position: absolute;
+  top: 61vh;
+  
+  }
+  
+  input[type=email] {
+    width: 40vw;
+  }
+  input[type=submit] {
+    width: 20vw;
+  font-size: 4vw;
+  }
+  
+.dropdown>li {
+  
+  list-style-type: none;
+  background: none;
+  box-shadow: none;
+  position: absolute;
+  top: 5vh;
+  z-index: 1;
+  width: 35vw;
+  height: 7vh;
+  background-image: url('./assets/frame.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  left: 6vw;
+}
+
+.dropdown>li>a {
+  padding:0;
+  text-decoration: none;
+
+}
+
+
+
+
+}
+
+
+/*.under {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.over {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  z-index: -1;
+}*/
