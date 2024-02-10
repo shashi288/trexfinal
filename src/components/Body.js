@@ -42,19 +42,7 @@ const Body =()=>{
         </div>
     </section>  
   
-    <section id="inscription">
-        <div className="inscription-body-1">
-        
-        </div>
-        <div className="inscription-body-2">
-        
-        </div>
-    </section>
-    <section id="lotto">
-        <div className="lotto-body">
-        
-        </div>
-    </section>
+ 
     <section id="roadmap">
         <div className="roadmap-body">
             
